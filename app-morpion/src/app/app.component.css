@@ -1,0 +1,15 @@
+.lines {
+    display: flex;
+}
+
+.columns {
+    border: solid 1px;
+    width: 2em;
+    height: 2em;
+}
+
+.btn-player {
+    width: 2em;
+    height: 2em;
+    justify-content: center; 
+}

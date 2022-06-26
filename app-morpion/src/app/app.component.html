@@ -1,0 +1,16 @@
+<div class="grid-player">
+  <div class="lines" *ngFor="let line of array;let indexLine = index">
+    <div class="columns" *ngFor="let column of line,let indexCol = index">
+      <div class="res_player">
+        <!-- [disabled]="!canPlay" -->
+        <button class="btn-player" (click)="play(indexLine, indexCol)">
+          {{getValue(indexLine, indexCol)}}
+        </button>
+      </div>
+    </div>
+  <br>
+  </div>
+</div>
+<p *ngIf="!!resultGame">
+  {{resultGame}}
+</p>
